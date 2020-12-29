@@ -15,11 +15,16 @@ module.exports = {
             colors: {
                 rose: colors.rose,
                 teal: colors.teal,
+                cyan: colors.cyan,
+                amber: colors.amber
             }
         },
     },
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+    ],
 }
